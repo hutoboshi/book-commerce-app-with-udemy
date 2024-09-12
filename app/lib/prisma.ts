@@ -10,6 +10,6 @@ if (!glovalForPrisma.prisma){
   glovalForPrisma.prisma = new PrismaClient()
 }
 
-prisma = glovalForPrisma;
+prisma = glovalForPrisma.prisma;
 
 export default prisma
