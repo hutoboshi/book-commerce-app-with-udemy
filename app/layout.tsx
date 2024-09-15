@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import { Noto_Sans_JP} from 'next/font/google'
 import "./globals.css";
 import Header from "./components/Header";
+import { SessionProvider } from "next-auth/react";
+import { NextAuthProvider } from "./lib/next-auth/provider";
+
 
 const NotoSansJP = Noto_Sans_JP({subsets:["latin"],weight:["400"]});
 
@@ -32,8 +35,10 @@ export default function RootLayout({
       <body
         className={NotoSansJP.className}
       >
+        <NextAuthProvider>
         <Header></Header>
         {children}
+        </NextAuthProvider>
       </body>
     </html>
   );
