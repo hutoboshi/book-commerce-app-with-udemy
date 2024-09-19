@@ -6,7 +6,7 @@ const PurchaseSuccess = () => {
     <div className="flex items-center justify-center checkout-success mt-20">
       <div className="bg-white p-6 rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          購入ありがとうございます！
+          購入ありがとうございます.
         </h1>
         <p className="text-center text-gray-600">
           ご購入いただいた内容の詳細は、登録されたメールアドレスに送信されます。
