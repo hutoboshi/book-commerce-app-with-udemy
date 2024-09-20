@@ -16,7 +16,7 @@ const PurchaseSuccess = () => {
             href={`/`}
             className="text-indigo-600 hover:text-indigo-800 transition duration-300"
           >
-            購入した記事を読む
+            購入した記事を読む.
           </Link>
         </div>
       </div>
